@@ -3,9 +3,6 @@ return {
   version = "*",
   lazy = false,
   dependencies = {"nvim-tree/nvim-web-devicons"},
-  keys = {
-    {"<leader>e", "<CMD>NvimTreeToggle<CR>", { noremap = true, silent = true }}
-  },
   config = function()
     require("nvim-tree").setup ({
       view = {

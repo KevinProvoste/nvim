@@ -1,4 +1,4 @@
-return {"akinsho/bufferline.nvim",
+--[[return {"akinsho/bufferline.nvim",
   version = "*",
   dependencies = "nvim-tree/nvim-web-devicons",
   config = function()
@@ -14,4 +14,10 @@ return {"akinsho/bufferline.nvim",
       },
     })
   end,
-}
+}]]
+
+-- Note:  Suspend.
+      --  No confortable. 
+      --  No closed buffers with :q.
+
+return{}

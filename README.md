@@ -6,7 +6,7 @@ Neovim is a modernized Vim designed for greater customization, efficiency, and a
 
 ## Features
 
-🧠 Neovim Native LSP.
+🧠 Configuration Native LSP. (Neovim >= v0.11)
 
 ⚡ The Plugin Manager is Lazy.
 

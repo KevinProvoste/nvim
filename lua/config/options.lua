@@ -14,7 +14,7 @@ set.hlsearch = false            -- Desabilita el resaltado luego de la busqueda.
 -- vim.wo.signcolumn = "yes"       -- Muestra la columna de signos de advertencia y mas. "yes" la mantiene siempre
 
 -- vim.o.showtabline = 2           -- Muestra las pestañas de archivos abiertos en la parte superior.
-vim.o.wrap = false -- El largo de la linea de codigo no se ajusta al tamaño de la ventana.
+-- vim.o.wrap = false -- El largo de la linea de codigo no se ajusta al tamaño de la ventana.
 
 -- Configuración básica de resaltado con bold
 vim.api.nvim_set_hl(0, "Comment", { italic = true })          -- Comentarios en cursiva
