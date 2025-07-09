@@ -1,7 +1,7 @@
 -- Neovim Options
 require("config.options")
 
--- Neovim Keybinds
+-- Neovim Keymaps
 require("config.keymaps")
 
 -- AutoCMDS
