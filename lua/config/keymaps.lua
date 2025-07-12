@@ -1,16 +1,12 @@
+-- Local Variables
 local map = vim.keymap.set
 local defaults = { noremap = true, silent = true }
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
--- Neovim
--- Tab Navigation
+-- Navigation
 map("n", "<leader>tn", ":tabnew<CR>", { desc = "New Tab"})
 map("n", "<leader>tx", ":tabclose<CR>", { desc = "Close Tab" })
-map("n", "<leader>tl", ":tabnext<CR>", { desc = "Next Tab" })
-map("n", "<leader>th", ":tabprevious<CR>", { desc = "Previous Tab" })
-
+map("n", "<tab>", ":tabnext<CR>", { desc = "Next Tab" })
+map("n", "<leader><tab>", ":tabprevious<CR>", { desc = "Previous Tab" })
 map("n", "<leader>vs", ":vsplit<CR>", defaults)
 
 --Nvim-Tree
@@ -25,11 +21,5 @@ map(
   { noremap = true, desc = "Run Python File" }
 )
 
--- Keymap para salir de toggleterm y subir al código
+-- Exit terminal mode and goes above the code
 vim.keymap.set('t', '<C-k>', [[<C-\><C-n><C-w>k]], defaults)
-
--- Bufferline
--- vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>", defaults)
--- vim.keymap.set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", defaults)
--- vim.keymap.set("n", "<leader>bc", ":bd<CR>", defaults)
--- vim.keymap.set("n", "<leader>bo", ":%bd|e#|bd#<CR>", defaults)

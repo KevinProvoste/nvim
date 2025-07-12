@@ -23,14 +23,9 @@ return {
                         },
                     },
                 },
-                -- Configuracion de Teclas
                 keymap = {
                   ["<Tab>"] = { "select_and_accept", "fallback"},
                   ["<C-d>"] = { "show_documentation", "hide_documentation", "fallback" },
-                  -- ['<Up>'] = { 'select_prev', 'fallback' },
-                  -- ['<Down>'] = { 'select_next', 'fallback' },
-                  -- ["<C-space>"] = {}
-                  -- ["<CR>"] = { "select_and_accept", "fallback"}, -- Tecla ENTER para aceptar sugerencia, sino hace salto de linea. Desactivado por molestia al escribir.
                 },
                 cmdline = {
                     enabled = false,

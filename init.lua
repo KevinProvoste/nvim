@@ -1,17 +1,14 @@
--- Neovim Options
+-- Options
 require("config.options")
 
--- Neovim Keymaps
+-- Keymaps
 require("config.keymaps")
 
 -- AutoCMDS
 require("config.autocmds")
 
--- Installation | lazy.nvim
+-- Lazy
 require("core.lazy")
 
 -- LSP
 require("core.lsp")
-
--- Setup | lazy.nvim
-require("lazy").setup("plugins")
