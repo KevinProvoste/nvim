@@ -16,8 +16,11 @@ return {
       "markdown",
       "css"
     },
-    hightlight = {
+    highlight = {
       enable = true,
+      custom_captures = {
+        ["function.call"] = "Identifier"
+      }
     },
     indent = {
       enable = true,

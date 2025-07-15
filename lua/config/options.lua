@@ -21,11 +21,20 @@ vim.g.maplocalleader = "\\"
 -- vim.o.wrap = false
 
 -- Hightlight
-vim.api.nvim_set_hl(0, "Comment", { italic = true })
-vim.api.nvim_set_hl(0, "Keyword", { bold = true })
-vim.api.nvim_set_hl(0, "Function", { bold = true })
-vim.api.nvim_set_hl(0, "Statement", { bold = true })
+--vim.api.nvim_set_hl(0, "Comment", { italic = true })
+--vim.api.nvim_set_hl(0, "Keyword", { bold = true })
+--vim.api.nvim_set_hl(0, "Function", { bold = true })
+--vim.api.nvim_set_hl(0, "Statement", { bold = true })
 
 -- Disable Netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+-- vim.cmd.colorscheme("tokyonight")
+
+--vim.cmd [[
+--  highlight link @function Function
+--  highlight link @function.call Function
+--  highlight Function guifg=#7aa2f7 gui=bold
+--]]
+

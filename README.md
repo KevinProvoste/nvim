@@ -11,3 +11,11 @@ Neovim is a modernized Vim designed for greater customization, efficiency, and a
 ⚡ The Plugin Manager is Lazy.
 
 ✅ Easy Configuration.
+
+## Installation
+
+1. Download this repository.
+
+2. Create folder 'nvim' in ~/.config
+
+3. Paste repository in nvim folder.
