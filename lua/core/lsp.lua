@@ -7,7 +7,10 @@ vim.lsp.enable({
 
 vim.diagnostic.config({
     virtual_lines = false,
-    virtual_text = true,
+   -- virtual_text = true,
+    virtual_text = {
+      prefix = "●"
+    },
     underline = true,
     update_in_insert = false,
     severity_sort = true,

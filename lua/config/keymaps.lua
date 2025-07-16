@@ -5,12 +5,13 @@ local defaults = { noremap = true, silent = true }
 -- Navigation
 map("n", "<leader>tn", "<CMD>tabnew<CR>", { desc = "New Tab"})
 map("n", "<leader>tx", "<CMD>tabclose<CR>", { desc = "Close Tab" })
-map("n", "<tab>", "<CMD>tabnext<CR>", { desc = "Next Tab" })
-map("n", "<leader><tab>", "<CMD>tabprevious<CR>", { desc = "Previous Tab" })
+map("n", "<Tab>", "<CMD>bnext<CR>", { desc = "Next Buffer" })
+map("n", "<leader><Tab>", "<CMD>bprevious<CR>", { desc = "Previous Buffer" })
+map("n", "<leader>bd", "<CMD>bdelete<CR>", { desc = "Close Buffer"})
 map("n", "<leader>vs", "<CMD>vsplit<CR>", defaults)
 
 --NeoTree
-map("n", "<leader>e", "<CMD>Neotree<CR>", defaults)
+map("n", "<leader>e", "<CMD>Neotree toggle<CR>", defaults)
 
 -- Telescope
 map("n", "<leader>ff", "<CMD>Telescope find_files<CR>", { desc = "Telescope find files" })
@@ -23,7 +24,7 @@ map("n", "<leader>fh", "<CMD>Telescope help_tags<CR>", { desc = "Telescope help 
 map(
   "n",
   "<leader>jp",
-  ":w | :TermExec cmd='python3 \"%\"' size=15 direction=horizontal go_back=0<CR>",
+  ":w | :TermExec cmd='python3 \"%\"' size=15 direction=float go_back=0<CR>",
   { noremap = true, desc = "Run Python File" }
 )
 

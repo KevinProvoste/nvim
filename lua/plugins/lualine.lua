@@ -15,7 +15,7 @@ return {
       },
       ignore_focus = {},
       always_divide_middle = false,
-      always_show_tabline = false,
+--     always_show_tabline = true,
       globalstatus = true,
       refresh = {
         statusline = 100,
@@ -39,18 +39,18 @@ return {
       lualine_y = {},
       lualine_z = {}
     },
-    tabline = {
-      lualine_a = {},
-      lualine_b = {
+   tabline = {
+--      lualine_a = {},
+--      lualine_b = {
 --          { "filetype", icon_only = true},
-        { "tabs", mode = 2, max_length = vim.o.columns },
-        {
-          function()
-            vim.o.showtabline = 1
-            return ''
-          end,
-        }
-      }
+--        { "tabs", mode = 2, max_length = vim.o.columns },
+--        {
+--          function()
+--            vim.o.showtabline = 1
+--            return ''
+--          end,
+--        }
+--      }
     },
     winbar = {},
     inactive_winbar = {},

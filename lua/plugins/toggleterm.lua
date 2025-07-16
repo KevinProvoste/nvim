@@ -3,23 +3,20 @@ return {
   cmd = { "TermExec", "ToggleTerm" },
   main = "toggleterm",
   opts = {
-    -- hide_numbers = false,
-    --shade_filetypes = {},
-    --shade_terminals = true,
-    --start_in_insert = true,
-    --insert_mappings = false,
-    --persist_size = true,
     direction = "float",
-    --close_on_exit = true,
+    float_opts = {
+      border = "single", -- "single", "double", "shadow", "curved", etc.
+      width = 100,
+      height = 30,
+      winblend = 0,       -- transparencia (0: opaco, 100: invisible)
+      highlights = {
+        border = "Normal",
+        background = "Normal",
+      },
+    },
     shell = "zsh",
     open_mapping = [[<C-\>]],
-    --float_opts = {
-      -- border = "curved",
-      --winblend = 3,
-      --highlights = {
-        --border = "Normal",
-        --background = "Normal",
-      --},
-    --},
+    start_in_insert = true,
+    persis_size = true,
   },
 }

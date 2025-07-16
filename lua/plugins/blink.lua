@@ -16,7 +16,7 @@ return {
                     nerd_font_variant = "normal",
                 },
                 sources = {
-                    default = { "lsp", --[["path",]] "snippets", --[["buffer"]] },
+                    default = { "lsp", --[["path", "snippets",]] "buffer" },
                     providers = {
                         cmdline = {
                             min_keyword_length = 2,
