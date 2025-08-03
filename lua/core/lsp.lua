@@ -2,7 +2,8 @@ vim.lsp.enable({
   "pyright",
   "html_lsp",
   "css_lsp",
-  "lua_ls"
+  "lua_ls",
+  "texlab"
 })
 
 vim.diagnostic.config({

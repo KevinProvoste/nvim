@@ -17,8 +17,8 @@ vim.g.maplocalleader = "\\"
 
 --vim.wo.signcolumn = "yes"       -- Muestra la columna de signos de advertencia y mas. "yes" la mantiene siempre
 
- -- vim.o.showtabline = 2           -- Muestra las pestañas de archivos abiertos en la parte superior.
- vim.o.wrap = false
+-- vim.o.showtabline = 2           -- Muestra las pestañas de archivos abiertos en la parte superior.
+vim.o.wrap = false
 
 -- Hightlight
 --vim.api.nvim_set_hl(0, "Comment", { italic = true })
@@ -29,8 +29,6 @@ vim.g.maplocalleader = "\\"
 -- Disable Netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
--- vim.cmd.colorscheme("tokyonight")
 
 --vim.cmd [[
 --  highlight link @function Function
